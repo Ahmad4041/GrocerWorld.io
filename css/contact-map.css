@@ -1,0 +1,20 @@
+#map {
+    width: 100%;
+    height: 400px; /* Adjust the height to match your image */
+  }
+
+  /* Custom styles to match the map's grayscale look */
+  .leaflet-container {
+    filter: grayscale(100%);
+  }
+
+  .custom-marker {
+    background-color: #ff5722;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+  }

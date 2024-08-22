@@ -1,0 +1,336 @@
+<div class="container my-5">
+  <div class="row">
+    <!-- Sidebar Section -->
+    <div class="col-lg-3">
+      <div class="sidebar mb-4">
+        <h5>Category</h5>
+        <ul class="list-group mb-3">
+          <li class="list-group-item">
+            <input type="checkbox" /> Health & Household
+          </li>
+          <li class="list-group-item">
+            <input type="checkbox" /> Beauty Products
+          </li>
+          <li class="list-group-item">
+            <input type="checkbox" /> Personal Care
+          </li>
+          <li class="list-group-item"><input type="checkbox" /> Baby Care</li>
+          <li class="list-group-item"><input type="checkbox" /> Grocery</li>
+        </ul>
+
+        <h5>Filter by Price</h5>
+        <input
+          type="range"
+          class="form-range mb-4"
+          min="0"
+          max="100"
+          step="1"
+          id="priceRange"
+        />
+        <div id="priceRangeValue">Price: $0 - $100</div>
+        <h5 class="mt-3">Brands</h5>
+        <ul class="list-group mb-3">
+          <li class="list-group-item"><input type="checkbox" /> Brand A</li>
+          <li class="list-group-item"><input type="checkbox" /> Brand B</li>
+          <li class="list-group-item"><input type="checkbox" /> Brand C</li>
+          <li class="list-group-item"><input type="checkbox" /> Brand D</li>
+        </ul>
+
+        <div class="sidebar p-3 border">
+          <h5 class="text-muted">Recent Product</h5>
+
+          <div class="product-item">
+            <img
+            src="data:image/jpeg;base64,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"""
+            alt="Organic Salt" />
+            <div>
+              <p class="mb-0">Organic Salt</p>
+              <p class="product-price mb-0">$10.50</p>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./images/ad-image-2.png" alt="Fresh Orange" />
+            <div>
+              <p class="mb-0">Fresh Orange</p>
+              <p class="product-price mb-0">
+                $24.50 <span class="product-old-price">$24.50</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./images/ad-image-3.png" alt="Italian Pasta" />
+            <div>
+              <p class="mb-0">Italian Pasta</p>
+              <p class="product-price mb-0">$15.50</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="./images/ad-image-4.png" alt="Italian Pasta" />
+            <div>
+              <p class="mb-0">Italian Pasta</p>
+              <p class="product-price mb-0">$15.50</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="col-lg-9">
+      <div class="sorting-view-section">
+        <label for="sortOptions" class="me-2">Sort by:</label>
+        <select id="sortOptions" class="form-select">
+          <option selected>Default Sorting</option>
+          <option value="1">Price: Low to High</option>
+          <option value="2">Price: High to Low</option>
+          <option value="3">Newest</option>
+        </select>
+
+        <a href="Product-page.php">
+          <button class="btn-view-toggle active" id="gridView">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-grid-3x3-gap-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"
+              />
+            </svg>
+          </button>
+        </a>
+
+        <a href="product-page-list.php">
+          <button class="btn-view-toggle" id="listView">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-card-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"
+              />
+              <path
+                d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"
+              />
+            </svg>
+          </button>
+        </a>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="row">
+        <!-- Product Card 1 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-badge">HOT</div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWJhjw3GL9xqn4Po9xI_jMxiJMc-GzX-Hxww&s"
+              alt="Product 1"
+            />
+            <div class="product-meta">By: Big Market</div>
+            <div class="product-title">Fresh Grapes</div>
+            <div class="rating">★★★★☆</div>
+            <div class="product-meta">Unit: 500gm</div>
+            <div class="product-price">$28.50</div>
+            <div class="product-price-original">$38.50</div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-badge best">BEST</div>
+            <img
+              src="https://alfatah.pk/cdn/shop/files/MasalaRs.40.png?v=1710155078"
+              alt="Product 2"
+            />
+            <div class="product-meta">By: Market</div>
+            <div class="product-title">Masala Lays</div>
+            <div class="rating">★★★★☆</div>
+            <div class="product-meta">Unit: 100g</div>
+            <div class="product-price">$16.50</div>
+            <div class="product-price-original">$20.50</div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOYdsJai2biNqcgWCw_J-X_GwoWbpJpEWEaA&s"
+              alt="Product 3"
+            />
+            <div class="product-meta">By: Wholesy</div>
+            <div class="product-title">Signature Chips</div>
+            <div class="rating">★★★★☆</div>
+            <div class="product-meta">Unit: Per Inches</div>
+            <div class="product-price">$24.50</div>
+            <div class="product-price-original">$30.50</div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYYP08vuBM5K3AXxvovl4MeXqNdfBz4OmTA&s"
+              alt="Product 3"
+            />
+            <div class="product-meta">By: Wholesy</div>
+            <div class="product-title">Mats</div>
+            <div class="rating">★★★★☆</div>
+            <div class="product-meta">Unit: Per bottle</div>
+            <div class="product-price">$24.50</div>
+            <div class="product-price-original">$30.50</div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+        <!-- Product Card 5 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWgRBeB_SsY1NbHIriVpXPd0K3Tr9YOD5evQ&s"
+              alt="Product 3"
+            />
+            <div class="product-meta">By: Wholesy</div>
+            <div class="product-title">Green Chineese Cabbage</div>
+            <div class="rating">★★★★☆</div>
+            <div class="product-meta">Unit: Per bottle</div>
+            <div class="product-price">$24.50</div>
+            <div class="product-price-original">$30.50</div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+        <!-- Product Card 6 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnA7p9enP7G51R4QhSxEoV1sXAabeFl6Y1PA&s"
+              alt="Product 3"
+            />
+            <div class="product-meta">By: Wholesy</div>
+            <div class="product-title">Nestle Sweet Yogurt</div>
+            <div class="rating">★★★★☆</div>
+            <div class="product-meta">Unit: Per bottle</div>
+            <div class="product-price">$24.50</div>
+            <div class="product-price-original">$30.50</div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+        <!-- Product Card 7 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjRunR2cBrwr4iKc9bYGYOttz6dOVEm1ynNA&s"
+              alt="Product 3"
+            />
+            <div class="product-meta">By: Wholesy</div>
+            <div class="product-title">Italian Wheat Pasta</div>
+            <div class="rating">★★★★☆</div>
+            <div class="product-meta">Unit: Per bottle</div>
+            <div class="product-price">$24.50</div>
+            <div class="product-price-original">$30.50</div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+        <!-- Product Card 8 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-badge best">Best</div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQi4Fp1tMI-aLuAGH-sEGDbvlvPrsb-7Wzw&s"
+              alt="Product 3"
+            />
+            <div class="product-meta">By: Wholesy</div>
+            <div class="product-title">Organic Dry Fish</div>
+            <div class="rating">★★★★☆</div>
+            <div class="product-meta">Unit: Per bottle</div>
+            <div class="product-price">$24.50</div>
+            <div class="product-price-original">$30.50</div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+        <!-- Product Card 9 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img
+              src="https://png.pngtree.com/png-clipart/20201208/ourmid/pngtree-classical-decorative-style-mat-clipart-png-image_2531941.jpg
+                  "
+              alt="Product 3"
+            />
+            <div class="product-meta">By: Wholesy</div>
+            <div class="product-title">Primary Quality Mats</div>
+            <div class="rating">★★★★☆</div>
+            <div class="product-meta">Unit: Per bottle</div>
+            <div class="product-price">$24.50</div>
+            <div class="product-price-original">$30.50</div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+
+        <!-- Additional product cards follow the same structure -->
+      </div>
+
+      <!-- Pagination -->
+      <nav aria-label="Page navigation example" class="mt-4">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a
+              class="page-link bg-success text-light btn"
+              href="product-page-3.php"
+              >Previous</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link rounded-circle mx-1 text-dark"
+              href="product-page.php"
+              >1</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link rounded-circle mx-1 text-dark"
+              href="product-page-2.php"
+              >2</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link rounded-circle mx-1 text-dark"
+              href="product-page-3.php"
+              >3</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link bg-success text-light btn"
+              href="product-page.php"
+              >Next</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("priceRange").addEventListener("input", function () {
+    document.getElementById("priceRangeValue").textContent =
+      "Price: $0 - $" + this.value;
+  });
+</script>

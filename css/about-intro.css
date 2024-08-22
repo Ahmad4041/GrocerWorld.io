@@ -1,0 +1,26 @@
+.guarantee-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  
+  .features-box {
+    margin-top: 30px;
+  }
+  
+  .image-about img {
+    width: 100%;
+   height:auto ;
+    
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  

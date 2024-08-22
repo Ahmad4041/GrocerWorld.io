@@ -1,0 +1,27 @@
+.form-sigup {
+  max-width: 100%;
+  padding: 1rem;
+}
+.login-Logo{
+position: relative;
+
+
+}
+.img-width{
+  width:380px;
+  height:120;
+}
+
+
+@media(max-width:557px){
+  
+  .img-width{
+      width: 300px;
+  }
+}
+@media(max-width:400px){
+ 
+  .img-width{
+      width: 250px;
+  }
+}

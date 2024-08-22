@@ -1,0 +1,16 @@
+
+.faq-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+.faq-subheader {
+    font-size: 20px;
+    font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+}
+
+body{
+    min-width: 320px;
+}

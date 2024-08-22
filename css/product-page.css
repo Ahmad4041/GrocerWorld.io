@@ -1,0 +1,141 @@
+.product-card {
+    border: 1px solid #e3e6ef;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.product-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+.product-badge.best {
+    background-color: green;
+}
+.product-badge.sale {
+    background-color: #28a745;
+}
+.product-badge.new {
+    background-color: #dc3545;
+}
+.product-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.product-price {
+    font-size: 1.2rem;
+    color: #28a745;
+    margin-bottom: 5px;
+}
+.product-price-original {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+.add-to-cart-btn {
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    border: none;
+    color:black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:1px solid grey;
+}
+.add-to-cart-btn:hover {
+    background-color:  #28a745;
+    color: white;
+}
+.product-meta {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+.rating {
+    color: #f1c40f;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.form-select:hover{
+background-color: #218838;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.product-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+.product-price {
+    color: green;
+}
+.product-old-price {
+    text-decoration: line-through;
+    color: grey;
+    margin-left: 0.5rem;
+}
+ /* Styles for the sorting and view toggle section */
+ .sorting-view-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .sorting-view-section .form-select {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .sorting-view-section .btn-view-toggle {
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .sorting-view-section .btn-view-toggle.active {
+    background-color: #333;
+    color: white;
+  }
+
+  .sorting-view-section .btn-view-toggle i {
+    font-size: 1rem;
+  }
+
+  .product-card:hover{
+    border-color: darkgreen;
+    cursor: pointer;
+    border: 2px solid  darkgreen;
+    transform: translate3d(0,-10px,0);
+box-shadow: 0px 21px 44px rgba(0, 0, 0, 0.08);
+
+}
+
+@media(max-width:600px){
+    .showing{
+display: none;
+    }
+}

@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script>
+  var map = L.map("map").setView([41.058, -74.015], 12);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+
+  // Custom marker to match the orange circle in the image
+  var marker = L.marker([41.058, -74.015], {
+    icon: L.divIcon({
+      className: "custom-marker",
+    }),
+  }).addTo(map);
+</script>
