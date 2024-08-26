@@ -32,7 +32,7 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Test Category
+                    Category
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
