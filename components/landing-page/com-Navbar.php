@@ -10,7 +10,7 @@
             >
               <a href="#!" class="ms-md-2">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/babb/d088/2218dc44d3e484afe50059b96e77c83c?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=G9KTMR~UPOFXh9hUbHGAJv2n4Y8WFG6Pmkhp5eh1IQFYBjBV80e8JGk~aBWUvqUGH4RqZT7ou3LIFHrPB5ievqwYlBPhiha7Q2GkK8tQWUrJPUu6XXkDqIhm6UVewHIQptPW~srFZdKYN2J4k4rodpGdF~xwB~dWGqZZ7F8HxH2BWwRTFWXVassEYqEbj1RPxqSyOUFQ4YmQmHWo-XvGVxoh6ls699cC1~eWrNkPOwmaAaZabbEQVkoHsjsVXaiobZuBaVunFGGF16~TPnj71yXiZqa~-RpVE-2hGpGpr1RmXOqFWKYw9Xe62cR~rsbCaZNFY0uoctfXdOEEdhkcgQ__"
+                  src="/images/logo.png"
                   height="70"
                   width="250"
                 />
