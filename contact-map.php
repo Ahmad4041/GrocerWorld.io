@@ -16,7 +16,7 @@
 <body>
 
 <?php
-    include "./components/contact-us/com-contact-map.html"
+    include "./components/contact-us/com-contact-Map.html"
         ?>
   
     
