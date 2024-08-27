@@ -309,7 +309,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link text-light"
-                  href="faqs.php"
+                  href="FAQs.php"
                   style="font-size: 14px; padding-right: 20px"
                   >FAQs</a
                 >
