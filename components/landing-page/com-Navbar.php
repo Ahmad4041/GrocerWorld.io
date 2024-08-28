@@ -87,7 +87,7 @@
 
                 <a href="login.php">
                   <img
-                    src="https://s3-alpha-sig.figma.com/img/5385/3360/68ea4c559634468cdb9bf9a533f867f4?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QLj7UBzwDgZVltmCNZMlrXW6zNdjJ3rN5ggsby~vCaFocu7rMnh9GdrYfZkHyR~mVWlhpJjmxgtnejFCvqafn98o6JvE0QG12BBAppdcUchqhbGmxthdgUJ7lkdRxWT~XZH6PglV0j4pvyY9Y0ugUEE8amSUrJSvdni~oYns0btZuIcUUV9dvkij7v7BHLdZKDFFJ8XD8ZRTYu38gGdRMkAy9KtCKON~WiDZpjgrYyhawbJ-cHrfauOUEwCvBttevthKBmiRwECOLBM7NxsTf4pwR6ImRx2zc-CVaXJZU2QCS1UV~TFQpB6tYbJ-FYK9AX0CtMun3oVe7cWyo3FkVQ__"
+                    src="./images/nav-pic.png"
                     class="rounded-circle"
                     style="border: 1px solid black"
                     height="30"
