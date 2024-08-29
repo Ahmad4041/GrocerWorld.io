@@ -14,7 +14,7 @@
       <div class="login-Logo">
         <img
           class="mb-4 img-width"
-          src="https://s3-alpha-sig.figma.com/img/babb/d088/2218dc44d3e484afe50059b96e77c83c?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hiUBjdSDsF9J9fawvFnCCubYJwRDvcVPVM0opL7O162qSZ5zCOkung~Tjfi~-gmwlT2Y3wo47cE1-E716yuFOeda5b~l5CGHSnSCPr4oHTNyVyfNb-57etWRcQ2dB8h33gNbMPwypcuUQxt1eBK0GF1s8KJOnjLvFE6hAwegzVlj96hY7esSOpm2SO~nCgWjIB-ohLpuVytct-xQeE~T6KFeBa1zQuHWVvWc8AWXKocMKelzLRVAk0NAa-bgThTolk8kp97U8wcVEYw9g3UEol69GFYGXfNT0N4G3no0RbVKGwFbdoNHNhYiASUoBDrIn-M4KEd2CrHqduwZ7IX6Tg__"
+          src="./images/logo.png"
           alt=""
         />
       </div>
