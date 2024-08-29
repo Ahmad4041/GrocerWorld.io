@@ -33,7 +33,7 @@
                     aria-expanded="false"
                   >
 
-                    My name is ali
+                    Category
 
                   </a>
                   <ul class="dropdown-menu">
