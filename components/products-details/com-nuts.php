@@ -125,10 +125,10 @@
 
 <div class="mb-4">
 <?php
-include "./components/com-related-product.html"
+include "related-product.php"
   ?>
 
   <?php
-include "./components/landing-page/com-sticker-50.html"
+include "sticker-50.php"
   ?>
 </div>
