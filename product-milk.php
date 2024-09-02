@@ -15,7 +15,7 @@
         ?>
 <?php
 
-include "./products/icecream-details.php"
+include "./products/milk-details.php"
     ?>
    
 <?php

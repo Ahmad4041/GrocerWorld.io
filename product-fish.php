@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+   
 
     <title>Grocer World</title>
 </head>
@@ -15,7 +15,7 @@
         ?>
 <?php
 
-include "./products/icecream-details.php"
+include "./products/fish-details.php"
     ?>
    
 <?php
@@ -30,7 +30,7 @@ include "unique-box.php"
         ?>
 
     
-
+ 
 </body>
 
 </html>
