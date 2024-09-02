@@ -15,7 +15,7 @@
         ?>
 <?php
 
-include "./products/icecream-details.php"
+include "./products/orange-details.php"
     ?>
    
 <?php
@@ -30,7 +30,7 @@ include "unique-box.php"
         ?>
 
     
-
+  
 </body>
 
 </html>
