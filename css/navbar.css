@@ -5,6 +5,22 @@
 body{
     min-width: 320px;
 }
+
+.activelink{
+    color: yellow;
+}
+.nav-link-item{
+    font-size: 14px;
+     /* padding-right: 20px; */
+     padding:15px;
+     display: block;
+   color: white; 
+     align-items: center;
+   
+     text-decoration: none;
+}
+
  .navbar-nav.nav-item .nav-home:hover{
     background-color:blue;
 }
+
