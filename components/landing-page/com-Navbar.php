@@ -255,16 +255,21 @@
             <ul class="navbar-nav">
               <li class="nav-item ">
                 <a
+
                   class="nav-link-item  home " 
+
                   aria-current="page"
                   href="index.php"
-                  style="font-size: 14px; padding-right: 20px"
+                  style="font-size: 14px; padding-right: 20px; 
+                  } "
                   >HOME</a
                 >
               </li>
               <li class="nav-item">
                 <a
+
                   class="   nav-link-item"
+
                   href="about-us.php"
                  
                   >ABOUT US</a
