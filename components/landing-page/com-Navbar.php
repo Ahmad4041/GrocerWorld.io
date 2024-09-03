@@ -126,15 +126,7 @@
               Shop By Categories
             </a>
 
-            <!-- <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Another action</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul> -->
+           
             <div
               class="flex-shrink-0 p-3 bg-white dropdown-menu"
               style="width: 220px"
@@ -261,9 +253,9 @@
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a
-                  class="nav-link active text-light"
+                  class="nav-link-item  home " 
                   aria-current="page"
                   href="index.php"
                   style="font-size: 14px; padding-right: 20px"
@@ -272,15 +264,15 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light"
+                  class="   nav-link-item"
                   href="about-us.php"
-                  style="font-size: 14px; padding-right: 20px"
+                 
                   >ABOUT US</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item product">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link-item text-light "
                   href="product-page.php"
                   style="font-size: 14px; padding-right: 20px"
                   >PRODUCTS</a
@@ -288,7 +280,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link-item  fresh" 
                   href="#"
                   style="font-size: 14px; padding-right: 20px"
                   >FRESH</a
@@ -296,7 +288,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link-item  frozen"
                   href="#"
                   style="font-size: 14px; padding-right: 20px"
                   >FROZEN</a
@@ -304,7 +296,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link-item shop "
                   href="#"
                   style="font-size: 14px; padding-right: 20px"
                   >SHOP</a
@@ -312,7 +304,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link-item  faqs"
                   href="FAQs.php"
                   style="font-size: 14px; padding-right: 20px"
                   >FAQs</a
@@ -320,7 +312,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link-item contact-us"
                   href="contact-us.php"
                   style="font-size: 14px; padding-right: 20px"
                   >Contact US</a
@@ -331,3 +323,12 @@
         </div>
       </nav>
     </header>
+
+
+
+
+
+
+
+
+    
