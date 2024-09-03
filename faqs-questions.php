@@ -12,7 +12,7 @@
 <body>
 
 <?php
-    include "./components/FAQs/com-FAQs-question.html"
+    include "./components/FAQs/com-faq-question.html"
         ?>
   
     
