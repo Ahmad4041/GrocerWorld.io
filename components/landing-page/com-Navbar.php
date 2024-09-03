@@ -263,16 +263,17 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-light"
+                  class="nav-link active  text-warning "
                   aria-current="page"
                   href="index.php"
-                  style="font-size: 14px; padding-right: 20px"
+                  style="font-size: 14px; padding-right: 20px; 
+                  } "
                   >HOME</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link text-light "
                   href="about-us.php"
                   style="font-size: 14px; padding-right: 20px"
                   >ABOUT US</a
