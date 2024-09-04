@@ -256,7 +256,7 @@
               <li class="nav-item ">
                 <a
 
-                  class=" nav-link-item home  active " 
+                  class=" nav-link home  active " 
 
                   aria-current="page"
                   href="index.php"
@@ -267,7 +267,7 @@
               <li class="nav-item">
                 <a
 
-                  class=" about  nav-link-item"
+                  class=" about  nav-link"
 
                   href="about-us.php"
                  
@@ -276,7 +276,7 @@
               </li>
               <li class="nav-item ">
                 <a
-                  class="nav-link-item  product "
+                  class="nav-link  product "
                   href="product-page.php"
                 
                   >PRODUCTS</a
@@ -284,7 +284,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link-item  fresh" 
+                  class="nav-link  fresh" 
                   href="#"
                   
                   >FRESH</a
@@ -292,7 +292,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link-item  frozen"
+                  class="nav-link  frozen"
                   href="#"
                  
                   >FROZEN</a
@@ -300,7 +300,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link-item shop "
+                  class="nav-link shop "
                   href="#"
                   
                   >SHOP</a
@@ -308,7 +308,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link-item  faqs"
+                  class="nav-link  faqs"
                   href="FAQs.php"
                   
                   >FAQs</a
@@ -316,7 +316,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link-item contact-us"
+                  class="nav-link contact-us"
                   href="contact-us.php"
                  
                   >CONTACT US</a
