@@ -20,7 +20,7 @@ body{
      text-decoration: none;
 }
 
- .navbar-nav.nav-item .nav-home:hover{
-    background-color:blue;
+ .nav-link-item:hover{
+    color:yellow;
 }
 

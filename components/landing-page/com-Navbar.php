@@ -252,11 +252,11 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ">
               <li class="nav-item ">
                 <a
 
-                  class="nav-link-item  home " 
+                  class="nav-link-item home  active " 
 
                   aria-current="page"
                   href="index.php"
@@ -268,16 +268,16 @@
               <li class="nav-item">
                 <a
 
-                  class="   nav-link-item"
+                  class=" about  nav-link-item"
 
                   href="about-us.php"
                  
                   >ABOUT US</a
                 >
               </li>
-              <li class="nav-item product">
+              <li class="nav-item ">
                 <a
-                  class="nav-link-item text-light "
+                  class="nav-link-item  product "
                   href="product-page.php"
                   style="font-size: 14px; padding-right: 20px"
                   >PRODUCTS</a
@@ -320,7 +320,7 @@
                   class="nav-link-item contact-us"
                   href="contact-us.php"
                   style="font-size: 14px; padding-right: 20px"
-                  >Contact US</a
+                  >CONTACT US</a
                 >
               </li>
             </ul>
