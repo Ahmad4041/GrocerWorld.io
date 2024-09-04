@@ -268,16 +268,16 @@
               <li class="nav-item">
                 <a
 
-                  class="   nav-link-item"
+                  class=" about  nav-link-item"
 
                   href="about-us.php"
                  
                   >ABOUT US</a
                 >
               </li>
-              <li class="nav-item product">
+              <li class="nav-item ">
                 <a
-                  class="nav-link-item text-light "
+                  class="nav-link-item  product "
                   href="product-page.php"
                   style="font-size: 14px; padding-right: 20px"
                   >PRODUCTS</a

@@ -1,15 +1,15 @@
-const pathName= window.location.pathname;
+const pathName= windows.location.pathname;
 const pagename=pathName.split("/").pop();
-if(pathName=== "index.php"){
-    document.querySelector(".home").classList.add("active");
+if(pagename === "index.php"){
+    document.querySelector(".home").classList.add("activelink");
 
 }
-if(pathName=== "about-us.php"){
-    document.querySelector(".about").classList.add("active");
+if(pathName === "about-us.php"){
+    document.querySelector(".about").classList.add("activelink");
     
 }
 
-if(pathName=== "product-page.php"){
+if(pathName == "product-page.php"){
     document.querySelector(".product").classList.add("activelink");
     
 }
@@ -22,14 +22,14 @@ if(pathName=== "frozen-page.php"){
     
 }
 if(pathName=== "shop-page.php"){
-    document.querySelector(".shop").classList.add("active");
+    document.querySelector(".shop").classList.add("activelink");
     
 }
 if(pathName=== "FAQs.php"){
-    document.querySelector(".faqs").classList.add("active");
+    document.querySelector(".faqs").classList.add("activelink");
     
 }
 if(pathName=== "contact-us.php"){
-    document.querySelector("cantact.home").classList.add("active");
+    document.querySelector(".cantact-us").classList.add("activelink");
     
 }
