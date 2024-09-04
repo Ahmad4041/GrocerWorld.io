@@ -256,7 +256,7 @@
               <li class="nav-item ">
                 <a
 
-                  class=" nav-link-item home  active " 
+                  class="nav-link-item home  active " 
 
                   aria-current="page"
                   href="index.php"
