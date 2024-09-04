@@ -260,16 +260,7 @@
 
                   aria-current="page"
                   href="index.php"
-style=".nav-link-item{
-    font-size: 14px;
-     /* padding-right: 20px; */
-     padding:15px;
-     display: block;
-   color: white; 
-     align-items: center;
-   
-     text-decoration: none;
-}"
+
                   >HOME</a
                 >
               </li>

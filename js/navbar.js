@@ -1,13 +1,13 @@
-// const navlink=document.querySelectorAll('.home');
-// const pathName= window.location.pathname;
+const navlink=document.querySelectorAll('.home');
+const pathName= window.location.pathname;
 
-// navlink.forEach(navlink =>{
-//     const navlinkpath = new URL(navlink.href).pathname;
-// if((pathName=== navlinkpath)|| (pathName==='/index.php' && navlinkpath==='/')){
+navlink.forEach(navlink =>{
+    const navlinkpath = new URL(navlink.href).pathname;
+if((pathName=== navlinkpath)|| (pathName==='/index.php' && navlinkpath==='/')){
    
-//     navlink.classlist.add('activelink');
-// }
-// });
+    navlink.classlist.add('activelink');
+}
+});
 
 // const pathName= windows.location.pathname;
 // const pagename=pathName.split("/").pop();
