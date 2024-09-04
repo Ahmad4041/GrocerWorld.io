@@ -260,8 +260,7 @@
 
                   aria-current="page"
                   href="index.php"
-                
-                   
+
                   >HOME</a
                 >
               </li>
