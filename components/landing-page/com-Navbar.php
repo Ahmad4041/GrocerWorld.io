@@ -252,11 +252,11 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ">
               <li class="nav-item ">
                 <a
 
-                  class="nav-link-item  home " 
+                  class="nav-link-item home  active " 
 
                   aria-current="page"
                   href="index.php"
@@ -320,7 +320,7 @@
                   class="nav-link-item contact-us"
                   href="contact-us.php"
                   style="font-size: 14px; padding-right: 20px"
-                  >Contact US</a
+                  >CONTACT US</a
                 >
               </li>
             </ul>
