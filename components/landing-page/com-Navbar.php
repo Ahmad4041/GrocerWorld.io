@@ -279,7 +279,7 @@
                 <a
                   class="nav-link-item  product "
                   href="product-page.php"
-                  style="font-size: 14px; padding-right: 20px"
+                
                   >PRODUCTS</a
                 >
               </li>
@@ -287,7 +287,7 @@
                 <a
                   class="nav-link-item  fresh" 
                   href="#"
-                  style="font-size: 14px; padding-right: 20px"
+                  
                   >FRESH</a
                 >
               </li>
@@ -295,7 +295,7 @@
                 <a
                   class="nav-link-item  frozen"
                   href="#"
-                  style="font-size: 14px; padding-right: 20px"
+                 
                   >FROZEN</a
                 >
               </li>
@@ -303,7 +303,7 @@
                 <a
                   class="nav-link-item shop "
                   href="#"
-                  style="font-size: 14px; padding-right: 20px"
+                  
                   >SHOP</a
                 >
               </li>
@@ -311,7 +311,7 @@
                 <a
                   class="nav-link-item  faqs"
                   href="FAQs.php"
-                  style="font-size: 14px; padding-right: 20px"
+                  
                   >FAQs</a
                 >
               </li>
@@ -319,7 +319,7 @@
                 <a
                   class="nav-link-item contact-us"
                   href="contact-us.php"
-                  style="font-size: 14px; padding-right: 20px"
+                 
                   >CONTACT US</a
                 >
               </li>
