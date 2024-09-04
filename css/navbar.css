@@ -9,18 +9,11 @@ body{
 .activelink{
     color: yellow;
 }
-.nav-link-item{
-    font-size: 14px;
-     /* padding-right: 20px; */
-     padding:15px;
-     display: block;
-   color: white; 
-     align-items: center;
-   
-     text-decoration: none;
-}
 
- .nav-link-item:hover{
-    color:yellow;
+ 
+.navbar-nav .nav-item a{
+    color: white; 
 }
-
+.navbar-nav.nav-item a:hover{
+    color: yellow;
+}
