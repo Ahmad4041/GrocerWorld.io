@@ -10,9 +10,12 @@ body{
     color: yellow;
 }
 
+
  
 .navbar-nav .nav-item a{
     color: white; 
+
+
 }
 .navbar-nav.nav-item a:hover{
     color: yellow;
