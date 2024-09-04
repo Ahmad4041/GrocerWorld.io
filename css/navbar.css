@@ -17,6 +17,6 @@ body{
 
 
 }
-.navbar-nav.nav-item a:hover{
+.navbar-nav .nav-item a:hover{
     color: yellow;
 }
