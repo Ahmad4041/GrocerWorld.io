@@ -257,7 +257,7 @@
                 <a
 
 
-                  class="  home   " 
+                  class=" nav-link  home   " 
 
 
                   aria-current="page"
