@@ -69,7 +69,7 @@
             >
               <div class="d-flex">
                 <!-- Cart -->
-                <a class="text-reset me-3" href="#">
+                <a class="text-reset me-3" href="cart.php">
                   <span
                     ><i
                       class="fas fa-shopping-cart p-1"
@@ -82,7 +82,7 @@
                     ></i
                   ></span>
                   <span class="badge rounded-pill badge-notification bg-danger"
-                    >1</span
+                    >3</span
                   >
                 </a>
                 <!-- User -->
