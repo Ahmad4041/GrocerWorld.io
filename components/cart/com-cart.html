@@ -1,0 +1,172 @@
+
+  <div class="container my-5">
+    
+    <div class="row">
+      <!-- Product Table -->
+      <div class="col-md-8 ">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Products</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="cartItems">
+            <!-- First Product Row -->
+            <tr data-id="1">
+              <td>
+                <div class="d-flex">
+                    <div>
+                        <img src="./images/ad-image-1.png" alt="" style="width: 80px; margin: 20px 20px 0px 20px; ">
+                    </div>
+                   
+                    <div>
+                        <div class="rating text-warning fs-5">★★★★☆</div>
+                        <h6>Fresh Vegetables</h6> 
+                        <small >$28.50</small>
+                    </div>
+                    
+                </div>
+              </td>
+              <td class="quantity-controls">
+                <button class="btn-minus" onclick="updateQuantity(this, -1)">-</button>
+                <input type="number" class="form-control quantity" value="1" min="1" data-price="28.50" readonly>
+                <button class="btn-plus" onclick="updateQuantity(this, 1)">+</button>
+              </td>
+              <td class="item-subtotal">$28.50</td>
+              <td><button class="delete-btn" onclick="removeItem(1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3 text-dark" viewBox="0 0 16 16">
+                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+              </svg></i></button></td>
+            </tr>
+            <!-- Second Product Row -->
+            <tr data-id="2">
+              <td>
+                <div class="d-flex">
+                    <div>
+                        <img src="./images/ad-image-2.png" alt="McDonald Ready Burger" style="width: 80px; margin: 20px 20px 0px 20px;">
+                    </div>
+                   
+                    <div>
+                        <div class="rating text-warning fs-5">★★★★☆</div>
+                       <h6>Organic Icecream</h6> 
+                        <small >$5.50</small>
+                    </div>
+                    
+                </div>
+                    
+               
+              </td>
+              <td class="quantity-controls">
+                <button class="btn-minus" onclick="updateQuantity(this, -1)">-</button>
+                <input type="number" class="form-control quantity" value="2" min="1" data-price="5.50" readonly>
+                <button class="btn-plus" onclick="updateQuantity(this, 1)">+</button>
+              </td>
+              <td class="item-subtotal">$11.00</td>
+              <td><button class="delete-btn" onclick="removeItem(2)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3 text-dark" viewBox="0 0 16 16">
+                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+              </svg></button></td>
+            </tr>
+            <!-- Third Product Row -->
+            <tr data-id="3">
+              <td>
+                <div class="d-flex">
+                    <div>
+                        <img src="./images/ad-image-3.png" alt="McDonald Ready Burger" style="width: 80px; margin: 20px 20px 0px 20px;">
+                    </div>
+                   
+                    <div>
+                        <div class="rating text-warning fs-5">★★★★☆</div>
+                        <h6>Beautiful Mats</h6> 
+                        <small >$18.50</small>
+                    </div>
+                </div>
+                    
+                    
+                
+              </td>
+              <td class="quantity-controls">
+                <button class="btn-minus" onclick="updateQuantity(this, -1)">-</button>
+                <input type="number" class="form-control quantity" value="1" min="1" data-price="18.50" readonly>
+                <button class="btn-plus" onclick="updateQuantity(this, 1)">+</button>
+              </td>
+              <td class="item-subtotal">$18.50</td>
+              <td><button class="delete-btn" onclick="removeItem(3)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3 text-dark" viewBox="0 0 16 16">
+                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+              </svg></button></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Update Cart Button -->
+        <button class="btn btn-success my-4" onclick="updateCart()">Update Cart</button>
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="col-md-4">
+        <div class="cart-summary">
+          <h5>Cart Total</h5>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Subtotal</span>
+              <strong id="subtotal">$160.00</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Shipping</span>
+              <strong>$60.00</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Incl. Vat</span>
+              <strong>$20.00</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total Value</span>
+              <strong id="totalValue">$240.00</strong>
+            </li>
+          </ul>
+
+          <!-- Payment Method Section -->
+          <div class="payment-methods">
+            <h6>Payment Methods</h6>
+            <a href="#" class="text-success me-2"
+          ><i class="fab fa-cc-amex fa-2x"></i
+        ></a>
+
+        <a href="#" class="text-primary me-2"
+        ><i class="fab fa-cc-visa fa-2x"></i
+      ></a>
+            <a href="#" class="text-dark me-2"
+          ><i class="fas fa-credit-card fa-2x"></i
+        ></a>
+        <a href="#" class="text-danger me-2"
+        ><i class="fab fa-cc-mastercard fa-2x"></i
+      ></a>
+      <a href="#" class="text-primary me-2"
+      ><i class="fab fa-cc-paypal fa-2x"></i
+    ></a>
+    <a href="#" class="text-dark"
+      ><i class="fab fa-cc-discover fa-2x"></i
+    ></a>
+          </div>
+
+          <!-- Terms and Conditions Checkbox -->
+          <div class="form-check mt-3">
+            <input class="form-check-input" type="checkbox" value="" id="termsCheck">
+            <label class="form-check-label" for="termsCheck">
+              I agree with the terms & conditions
+            </label>
+          </div>
+
+          <!-- Proceed To Checkout Button -->
+          <button class="btn btn-dark w-100 mt-3" onclick="checkout()">Proceed To Checkout</button>
+        </div>
+      </div>
+</div>    
+  </div>
+
+
+
+
+
+

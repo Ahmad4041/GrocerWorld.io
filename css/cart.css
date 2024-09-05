@@ -1,0 +1,74 @@
+body{
+    min-width: 320px;
+  }
+  .landing-wrapper{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.cart-summary {
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  .remove-btn {
+    cursor: pointer;
+   
+  }
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  .quantity-controls input {
+    width: 50px;
+    text-align: center;
+  }
+  .quantity-controls button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .payment-methods img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  .delete-btn {
+    background: none;
+    border: none;
+   
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  
+ @media(max-width:487px){
+    table thead{
+        display: none;
+        
+    }
+   table tr{
+    width: 100%;
+    margin-bottom: 10px;
+   }
+   .quantity-controls{
+    display: flex;
+    justify-content: flex-end;
+   }
+   .item-subtotal{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bolder;
+    
+   }
+   .delete-btn{
+  float: right;
+   }
+    table tbody{
+        display: flex;
+        flex-wrap: wrap ;
+       
+    }
+    
+ }
+
+ 
