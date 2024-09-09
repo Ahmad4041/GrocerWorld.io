@@ -95,9 +95,16 @@
               </svg></button></td>
             </tr>
           </tbody>
+
         </table> -->
       <div id="cart-items"></div>
       <div id="cart-total"></div>
+
+
+        <!-- Update Cart Button -->
+        <button class="btn  my-4"style="background-color: rgb(1, 68, 1); color: white;" onclick="updateCart()">Update Cart</button>
+      </div>
+
 
       <button class="btn btn-success my-4" onclick="updateCart()">
         Update Cart
@@ -150,6 +157,7 @@
           ></a>
         </div>
 
+
         <!-- Terms and Conditions Checkbox -->
         <div class="form-check mt-3">
           <input
@@ -161,6 +169,11 @@
           <label class="form-check-label" for="termsCheck">
             I agree with the terms & conditions
           </label>
+
+          <!-- Proceed To Checkout Button -->
+          <button class="btn  w-100 mt-3" style="background-color: rgb(1, 68, 1); color: white;
+          " onclick="checkout()">Proceed To Checkout</button>
+
         </div>
 
         <!-- Proceed To Checkout Button -->
