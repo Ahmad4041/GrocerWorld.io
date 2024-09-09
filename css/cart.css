@@ -12,6 +12,7 @@ body{
   }
   .remove-btn {
     cursor: pointer;
+    display: none;
    
   }
   .quantity-controls {
