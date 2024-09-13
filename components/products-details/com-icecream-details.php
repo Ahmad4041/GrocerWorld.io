@@ -75,7 +75,9 @@
         <button onclick="increment()">+</button>
       </div>
 
-      <button class="btn btn-success btn-lg w-100">Add to Cart</button>
+      <button class="btn btn-success btn-lg w-100 add-to-cart"  data-id="4"
+            data-name="Icecream"
+            data-price="30">Add to Cart</button>
 
       <p class="mt-3">SKU: F5wslk62set5</p>
       <p>Brand: Olympic</p>

@@ -17,7 +17,8 @@
  <?php
  include "./components/products-details/com-icecream-details.php"
  ?>
-  
+   <script src="./js/product.js"></script> 
+   <script src="./js/cart.js"></script> 
    <script src="./js/icecream.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
 </body>
