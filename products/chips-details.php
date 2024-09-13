@@ -18,6 +18,8 @@
  include "./components/products-details/com-chips-details.php"
  ?>
   
+  <script src="./js/cart.js"></script>
+<script src="./js/product.js"></script>
    <script src="./js/chips.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
 </body>

@@ -21,8 +21,7 @@ include "./components/landing-page/com-deals-week.html"
 
 <scrip src="./js/jquery-1.11.0.min.js"></script>
 <script src="./js/deals.js"></script>
-<script src="./js/cart.js"></script>
-<script src="./js/product.js"></script>
+
 
 
 </body>

@@ -75,7 +75,9 @@
         <button onclick="increment()">+</button>
       </div>
 
-      <button class="btn btn-success btn-lg w-100">Add to Cart</button>
+      <button class="btn btn-success btn-lg w-100 add-to-cart "  data-id="1"
+        data-name="Chineese Chips"
+        data-price="10" >Add to Cart</button>
 
       <p class="mt-3">SKU: F5wslk62set5</p>
       <p>Brand: Olympic</p>
