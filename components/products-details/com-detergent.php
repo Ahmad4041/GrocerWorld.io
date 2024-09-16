@@ -60,7 +60,7 @@
     <select class="form-select" id="sizeSelect">
       <option value="1ltr" data-price="2.50">1 ltr</option>
       <option value="5ltr" data-price="5.00">5 ltr</option>
-      <option value="10litr" data-price="9.50">10 litr</option>
+      <option value="10ltr" data-price="9.50">10 litr</option>
     </select>
   </div>
 
