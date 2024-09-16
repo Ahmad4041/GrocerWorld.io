@@ -5,7 +5,7 @@
       <div class="product-gallery">
         <img
           id="mainImage"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd2gWO01zlaxoCHD10FYDRFzTND2sYvhY5yA&s"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd2gWO01zlaxoCHD10FYDRFzTND2sYvhY5yA&ss"
           alt="Product Image"
           class="img-fluid"
         />
@@ -26,7 +26,7 @@
         <div class="col-3">
           <div class="thumbnail-item" onclick="changeImage(this, 1)">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLEsUFoormNqOXTqjbJziHlF6LqnenaeZpmQ&s"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQc0x-6nO9_JUj-zims9LrGhfHZBE0R5NCQ&s"
               alt="Thumbnail 2"
             />
           </div>
@@ -34,7 +34,7 @@
         <div class="col-3">
           <div class="thumbnail-item" onclick="changeImage(this, 2)">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUgFBC5LVSmvPprs9nikDIXbFmhYF-jthycQ&s"
+              src="https://cdn.thewirecutter.com/wp-content/media/2024/06/laundrydetergents-2048px-persilpr.jpg?auto=webp&quality=60&width=570"
               alt="Thumbnail 3"
             />
           </div>
@@ -42,48 +42,53 @@
       </div>
     </div>
 
-    <!-- Product Details -->
-    <div class="col-md-6">
-      <h2>Original Detergent</h2>
-      <p class="price">
-        $08.50 <span class="text-muted"><s>$17.50</s></span>
-      </p>
-      <p>
-        Nonummy parturient leo potenti convallis iaculis metus parturient leo
-        libero hac convallis orci tristique consequat ad, primis erat vehicula
-        platea magna hymenaeos lorem aliquet odio interdum.
-      </p>
+   
+  <div class="col-md-6">
+  <h2>Liquid Detergnts</h2>
+  <p class="price">
+    $2.50 
+    <!-- <span class="text-muted"><s>$10.50</s></span> -->
+  </p>
+  <p>
+    Nonummy parturient leo potenti convallis iaculis metus parturient leo
+    libero hac convallis orci tristique consequat ad, primis erat vehicula
+    platea magna hymenaeos lorem aliquet odio interdum.
+  </p>
 
-      <div class="available-size">
-        <label for="sizeSelect" class="form-label">Available Bottles:</label>
-        <select class="form-select" id="sizeSelect">
-          <option value="20gm">1ltr</option>
-          <option value="50gm">2ltr</option>
-          <option value="20gm">3ltr</option>
-          <option value="50gm">4ltr</option>
-          <option value="100gm">5ltr</option>
-        </select>
-      </div>
-
-      <div class="quantity-section">
-        <button onclick="decrement()">-</button>
-        <input
-          type="number"
-          id="quantity"
-          class="form-control"
-          value="1"
-          min="1"
-        />
-        <button onclick="increment()">+</button>
-      </div>
-
-      <button class="btn btn-success btn-lg w-100">Add to Cart</button>
-
-      <p class="mt-3">SKU: F5wslk62set5</p>
-      <p>Brand: Liquid Detergent</p>
-      <p>Category: Detergent</p>
-    </div>
+  <div class="available-size">
+    <label for="sizeSelect" class="form-label">Available Size:</label>
+    <select class="form-select" id="sizeSelect">
+      <option value="1ltr" data-price="2.50">1 ltr</option>
+      <option value="5ltr" data-price="5.00">5 ltr</option>
+      <option value="10litr" data-price="9.50">10 litr</option>
+    </select>
   </div>
+
+  <div class="quantity-section">
+    <button onclick="decrement()">-</button>
+    <input
+      type="number"
+      id="quantity"
+      class="form-control"
+      value="1"
+      min="1"
+    />
+    <button onclick="increment()">+</button>
+  </div>
+
+  <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="1"
+    data-name="Masala Chips"
+    data-price="8.50">Add to Cart</button>
+
+  <p class="mt-3">SKU: F5wslk62set5</p>
+  <p>Brand: Olympic</p>
+  <p>Category: Snacks</p>
+</div>
+</div>
+
+
+
+
 
   <!-- Product Features -->
   <div class="row product-description">
