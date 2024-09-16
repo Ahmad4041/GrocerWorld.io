@@ -42,48 +42,53 @@
       </div>
     </div>
 
-    <!-- Product Details -->
-    <div class="col-md-6">
-      <h2>Masala Potato Chips</h2>
-      <p class="price">
-        $08.50 <span class="text-muted"><s>$10.50</s></span>
-      </p>
-      <p>
-        Nonummy parturient leo potenti convallis iaculis metus parturient leo
-        libero hac convallis orci tristique consequat ad, primis erat vehicula
-        platea magna hymenaeos lorem aliquet odio interdum.
-      </p>
+   
+  <div class="col-md-6">
+  <h2>Masala Potato Chips</h2>
+  <p class="price">
+    $08.50 
+    <!-- <span class="text-muted"><s>$10.50</s></span> -->
+  </p>
+  <p>
+    Nonummy parturient leo potenti convallis iaculis metus parturient leo
+    libero hac convallis orci tristique consequat ad, primis erat vehicula
+    platea magna hymenaeos lorem aliquet odio interdum.
+  </p>
 
-      <div class="available-size">
-        <label for="sizeSelect" class="form-label">Available Size:</label>
-        <select class="form-select" id="sizeSelect">
-          <option value="20gm">20gm</option>
-          <option value="50gm">50gm</option>
-          <option value="100gm">100gm</option>
-        </select>
-      </div>
-
-      <div class="quantity-section">
-        <button onclick="decrement()">-</button>
-        <input
-          type="number"
-          id="quantity"
-          class="form-control"
-          value="1"
-          min="1"
-        />
-        <button onclick="increment()">+</button>
-      </div>
-
-      <button class="btn btn-success btn-lg w-100 add-to-cart "  data-id="1"
-        data-name="Chineese Chips"
-        data-price="10" >Add to Cart</button>
-
-      <p class="mt-3">SKU: F5wslk62set5</p>
-      <p>Brand: Olympic</p>
-      <p>Category: Snacks</p>
-    </div>
+  <div class="available-size">
+    <label for="sizeSelect" class="form-label">Available Size:</label>
+    <select class="form-select" id="sizeSelect">
+      <option value="20gm" data-price="8.50">20gm</option>
+      <option value="50gm" data-price="10.00">50gm</option>
+      <option value="100gm" data-price="12.00">100gm</option>
+    </select>
   </div>
+
+  <div class="quantity-section">
+    <button onclick="decrement()">-</button>
+    <input
+      type="number"
+      id="quantity"
+      class="form-control"
+      value="1"
+      min="1"
+    />
+    <button onclick="increment()">+</button>
+  </div>
+
+  <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="1"
+    data-name="Masala Chips"
+    data-price="8.50">Add to Cart</button>
+
+  <p class="mt-3">SKU: F5wslk62set5</p>
+  <p>Brand: Olympic</p>
+  <p>Category: Snacks</p>
+</div>
+</div>
+
+
+
+
 
   <!-- Product Features -->
   <div class="row product-description">
