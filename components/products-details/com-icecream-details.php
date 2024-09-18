@@ -44,7 +44,7 @@
 
     <!-- Product Details -->
     <div class="col-md-6">
-      <h2>Masala Potato Chips</h2>
+      <h2>Icecream</h2>
       <p class="price">
         $08.50 <span class="text-muted"><s>$10.50</s></span>
       </p>
