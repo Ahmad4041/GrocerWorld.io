@@ -42,46 +42,57 @@
       </div>
     </div>
 
-    <!-- Product Details -->
     <div class="col-md-6">
-      <h2>Fresh Oranges</h2>
-      <p class="price">
-        $08.50 <span class="text-muted"><s>$10.50</s></span>
-      </p>
-      <p>
-        Nonummy parturient leo potenti convallis iaculis metus parturient leo
-        libero hac convallis orci tristique consequat ad, primis erat vehicula
-        platea magna hymenaeos lorem aliquet odio interdum.
-      </p>
+  <h2>Fresh Oranges</h2>
+  <p class="price">
+    $5.00
+    <!-- <span class="text-muted"><s>$10.50</s></span> -->
+  </p>
+  <p>
+    Nonummy parturient leo potenti convallis iaculis metus parturient leo
+    libero hac convallis orci tristique consequat ad, primis erat vehicula
+    platea magna hymenaeos lorem aliquet odio interdum.
+  </p>
 
-      <div class="available-size">
-        <label for="sizeSelect" class="form-label">Available Bags Weight:</label>
-        <select class="form-select" id="sizeSelect">
-          <option value="20gm">1kg</option>
-          <option value="50gm">5kg</option>
-          <option value="100gm">Any Size</option>
-        </select>
-      </div>
-
-      <div class="quantity-section">
-        <button onclick="decrement()">-</button>
-        <input
-          type="number"
-          id="quantity"
-          class="form-control"
-          value="1"
-          min="1"
-        />
-        <button onclick="increment()">+</button>
-      </div>
-
-      <button class="btn btn-success btn-lg w-100">Add to Cart</button>
-
-      <p class="mt-3">SKU: F5wslk62set5</p>
-      <p>Brand: Olympic</p>
-      <p>Category: Snacks</p>
-    </div>
+  <div class="available-size">
+    <label for="sizeSelect" class="form-label">Available Size:</label>
+    <select class="form-select" id="sizeSelect">
+      <option value="5kg" data-price="5.00">5kg</option>
+      <option value="10kg" data-price="10.00">10kg</option>
+      <option value="15kg" data-price="15.00">15kg</option>
+    </select>
   </div>
+
+  <div class="quantity-section">
+    <button onclick="decrement()">-</button>
+    <input
+      type="number"
+      id="quantity"
+      class="form-control"
+      value="1"
+      min="1"
+    />
+    <button onclick="increment()">+</button>
+  </div>
+
+  <!-- <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="1"
+    data-name="Masala Chips"
+    data-price="8.50" >Add to Cart</button> -->
+
+    <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="10" data-name="Fresh Oranges" data-price="5.00" onclick="addToCart(this)">
+  Add to Cart
+</button>
+
+
+  <p class="mt-3">SKU: F5wslk62set5</p>
+  <p>Brand: GrocerWorld</p>
+  <p>Category: Fruits</p>
+</div>
+</div>
+
+
+
+
 
   <!-- Product Features -->
   <div class="row product-description">
@@ -132,3 +143,4 @@ include "related-product.php"
 include "sticker-50.php"
   ?>
 </div>
+ 

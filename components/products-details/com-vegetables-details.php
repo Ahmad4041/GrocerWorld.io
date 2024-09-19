@@ -5,7 +5,7 @@
       <div class="product-gallery">
         <img
           id="mainImage"
-          src="./images/ad-image-1.png"
+          src="./images/ad-image-5.png"
           alt="Product Image"
           class="img-fluid"
         />
@@ -18,7 +18,7 @@
         <div class="col-3">
           <div class="thumbnail-item active" onclick="changeImage(this, 0)">
             <img
-              src="./images/ad-image-1.png"
+              src="./images/ad-image-5.png"
               alt="Thumbnail 1"
             />
           </div>
@@ -42,48 +42,55 @@
       </div>
     </div>
 
-    <!-- Product Details -->
     <div class="col-md-6">
-      <h2>Organic Vegetables</h2>
-      <p class="price">
-        $08.50 <span class="text-muted"><s>$10.50</s></span>
-      </p>
-      <p>
-        Nonummy parturient leo potenti convallis iaculis metus parturient leo
-        libero hac convallis orci tristique consequat ad, primis erat vehicula
-        platea magna hymenaeos lorem aliquet odio interdum.
-      </p>
+  <h2>Fresh Vegetables</h2>
+  <p class="price">
+    $2.00 
+    <!-- <span class="text-muted"><s>$10.50</s></span> -->
+  </p>
+  <p>
+    Nonummy parturient leo potenti convallis iaculis metus parturient leo
+    libero hac convallis orci tristique consequat ad, primis erat vehicula
+    platea magna hymenaeos lorem aliquet odio interdum.
+  </p>
 
-      <div class="available-size">
-        <label for="sizeSelect" class="form-label">Available Bag Size:</label>
-        <select class="form-select" id="sizeSelect">
-          <option value="20gm">1kg</option>
-          <option value="50gm">25km</option>
-          <option value="100gm">50kg</option>
-        </select>
-      </div>
-
-      <div class="quantity-section">
-        <button onclick="decrement()">-</button>
-        <input
-          type="number"
-          id="quantity"
-          class="form-control"
-          value="1"
-          min="1"
-        />
-        <button onclick="increment()">+</button>
-      </div>
-
-      <button class="btn btn-success btn-lg w-100 add-to-cart"  data-id="5"
-            data-name="Organic Vegetables"
-            data-price="30">Add to Cart</button>
-
-      <p class="mt-3">SKU: F5wslk62set5</p>
-      <p>Brand: Olympic</p>
-      <p>Category: Snacks</p>
-    </div>
+  <div class="available-size">
+    <label for="sizeSelect" class="form-label">Available Size:</label>
+    <select class="form-select" id="sizeSelect">
+      <option value="5kg" data-price="2.00">5kg</option>
+      <option value="10kg" data-price="4.00">10kg</option>
+      <option value="15kg" data-price="10.00">15kg</option>
+    </select>
   </div>
+
+  <div class="quantity-section">
+    <button onclick="decrement()">-</button>
+    <input
+      type="number"
+      id="quantity"
+      class="form-control"
+      value="1"
+      min="1"
+    />
+    <button onclick="increment()">+</button>
+  </div>
+
+  
+
+    <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="5" data-name="Vegetables" data-price="2.00" onclick="addToCart(this)">
+  Add to Cart
+</button>
+
+
+  <p class="mt-3">SKU: F5wslk62set5</p>
+  <p>Brand: Olympic</p>
+  <p>Category: Vegetables</p>
+</div>
+</div>
+
+
+
+
 
   <!-- Product Features -->
   <div class="row product-description">

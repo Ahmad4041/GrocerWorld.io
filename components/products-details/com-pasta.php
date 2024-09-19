@@ -5,7 +5,7 @@
       <div class="product-gallery">
         <img
           id="mainImage"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd2gWO01zlaxoCHD10FYDRFzTND2sYvhY5yA&ss"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjRunR2cBrwr4iKc9bYGYOttz6dOVEm1ynNA&s"
           alt="Product Image"
           class="img-fluid"
         />
@@ -18,7 +18,7 @@
         <div class="col-3">
           <div class="thumbnail-item active" onclick="changeImage(this, 0)">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd2gWO01zlaxoCHD10FYDRFzTND2sYvhY5yA&s"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjRunR2cBrwr4iKc9bYGYOttz6dOVEm1ynNA&s"
               alt="Thumbnail 1"
             />
           </div>
@@ -26,7 +26,7 @@
         <div class="col-3">
           <div class="thumbnail-item" onclick="changeImage(this, 1)">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQc0x-6nO9_JUj-zims9LrGhfHZBE0R5NCQ&s"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqQE0t5SWd7da_LJ8gu1OzTjd_a3kAVfcD2A&s"
               alt="Thumbnail 2"
             />
           </div>
@@ -34,7 +34,7 @@
         <div class="col-3">
           <div class="thumbnail-item" onclick="changeImage(this, 2)">
             <img
-              src="https://cdn.thewirecutter.com/wp-content/media/2024/06/laundrydetergents-2048px-persilpr.jpg?auto=webp&quality=60&width=570"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zuDjVdgmAj2Kb3KKLm98v-v-3aaw1FjXsA&s"
               alt="Thumbnail 3"
             />
           </div>
@@ -42,11 +42,10 @@
       </div>
     </div>
 
-   
-  <div class="col-md-6">
-  <h2>Liquid Detergnts</h2>
+    <div class="col-md-6">
+  <h2>Organic Pasta</h2>
   <p class="price">
-    $2.50 
+    $3.00
     <!-- <span class="text-muted"><s>$10.50</s></span> -->
   </p>
   <p>
@@ -58,9 +57,9 @@
   <div class="available-size">
     <label for="sizeSelect" class="form-label">Available Size:</label>
     <select class="form-select" id="sizeSelect">
-      <option value="1ltr" data-price="2.50">1ltr</option>
-      <option value="5ltr" data-price="5.00">5ltr</option>
-      <option value="10ltr" data-price="9.50">10litr</option>
+      <option value="3kg" data-price="3.00">3kg</option>
+      <option value="5kg" data-price="5.00">5kg</option>
+      <option value="10kg" data-price="10.00">10kg</option>
     </select>
   </div>
 
@@ -76,13 +75,16 @@
     <button onclick="increment()">+</button>
   </div>
 
-  <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="12" data-name="Liquid Detergents" data-price="2.50" onclick="addToCart(this)">
+  
+
+    <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="14" data-name="Organic Pasta " data-price="3" onclick="addToCart(this)">
   Add to Cart
 </button>
 
+
   <p class="mt-3">SKU: F5wslk62set5</p>
-  <p>Brand: Liquid</p>
-  <p>Category: Detergents</p>
+  <p>Brand: GrocerWorld</p>
+  <p>Category: Pasta</p>
 </div>
 </div>
 
@@ -139,3 +141,4 @@ include "related-product.php"
 include "sticker-50.php"
   ?>
 </div>
+ 

@@ -17,6 +17,16 @@
  <?php
  include "./components/products-details/com-vegetables-details.php"
  ?>
+
+
+
+
+
+
+
+
+<script src="./js/cart.js"></script> 
+  <script src="./js/product.js"></script> 
    <script src="./js/cart.js"></script> 
    <script src="./js/product.js"></script> 
    <script src="./js/vegetables.js"></script> 
