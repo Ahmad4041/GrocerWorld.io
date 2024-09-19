@@ -5,7 +5,7 @@
       <div class="product-gallery">
         <img
           id="mainImage"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtk-hrij30TxKt8MnrqZQFMVAfE7k95Pu9Mg&s"
+          src="images/ad-image-1.png"
           alt="Product Image"
           class="img-fluid"
         />
@@ -18,7 +18,7 @@
         <div class="col-3">
           <div class="thumbnail-item active" onclick="changeImage(this, 0)">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtk-hrij30TxKt8MnrqZQFMVAfE7k95Pu9Mg&s"
+              src="images/ad-image-1.png"
               alt="Thumbnail 1"
             />
           </div>
@@ -76,9 +76,14 @@
     <button onclick="increment()">+</button>
   </div>
 
-  <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="1"
+  <!-- <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="1"
     data-name="Masala Chips"
-    data-price="8.50">Add to Cart</button>
+    data-price="8.50" >Add to Cart</button> -->
+
+    <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="1" data-name="Masala Potato Chips" data-price="8.50" onclick="addToCart(this)">
+  Add to Cart
+</button>
+
 
   <p class="mt-3">SKU: F5wslk62set5</p>
   <p>Brand: Olympic</p>

@@ -1,7 +1,7 @@
 const images = [
-    "./images/ad-image-5.png",
-    "https://img.freepik.com/free-vector/group-fruit-vegetable_1308-124115.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714003200&semt=ais",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKenqrMytZY3hzYlGg52tzdf1yWfEGAjncQQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWgRBeB_SsY1NbHIriVpXPd0K3Tr9YOD5evQ&s",
+    "https://images.squarespace-cdn.com/content/v1/5d96d524052c897425394aaf/907916b3-026a-44c3-919b-908ee3c4651c/napa-cabbage.jpeg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6gfcUPgfG-IaUfucvRQmUkVegAWwmSeMGRw&s ",
   ];
   let currentIndex = 0;
 
@@ -45,9 +45,9 @@ const images = [
       }
    
       const sizePrices = {
-        "5kg": 2.00,
-        "10kg": 4.00,
-        "15kg": 10.00
+        "3kg": 1,
+        "5kg": 3.00,
+        "10kg": 5.00
       };
       
       document.getElementById("sizeSelect").addEventListener("change", function () {

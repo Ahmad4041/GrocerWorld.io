@@ -5,7 +5,7 @@
       <div class="product-gallery">
         <img
           id="mainImage"
-          src="./images/ad-image-4.png"
+          src="./images/ad-image-3.png"
           alt="Product Image"
           class="img-fluid"
         />
@@ -18,7 +18,7 @@
         <div class="col-3">
           <div class="thumbnail-item active" onclick="changeImage(this, 0)">
             <img
-              src="./images/ad-image-4.png"
+              src="./images/ad-image-3.png"
               alt="Thumbnail 1"
             />
           </div>
@@ -26,7 +26,7 @@
         <div class="col-3">
           <div class="thumbnail-item" onclick="changeImage(this, 1)">
             <img
-              src="./images/ad-image-2.png"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJVGbI4pBbCqLyqDe64U1LGqBn9lP6aRMeaQ&s"
               alt="Thumbnail 2"
             />
           </div>
@@ -42,48 +42,56 @@
       </div>
     </div>
 
-    <!-- Product Details -->
-    <div class="col-md-6">
-      <h2>Icecream</h2>
-      <p class="price">
-        $08.50 <span class="text-muted"><s>$10.50</s></span>
-      </p>
-      <p>
-        Nonummy parturient leo potenti convallis iaculis metus parturient leo
-        libero hac convallis orci tristique consequat ad, primis erat vehicula
-        platea magna hymenaeos lorem aliquet odio interdum.
-      </p>
+   
+  <div class="col-md-6">
+  <h2>Organic Icecream</h2>
+  <p class="price">
+    $2.00 
+    <!-- <span class="text-muted"><s>$10.50</s></span> -->
+  </p>
+  <p>
+    Nonummy parturient leo potenti convallis iaculis metus parturient leo
+    libero hac convallis orci tristique consequat ad, primis erat vehicula
+    platea magna hymenaeos lorem aliquet odio interdum.
+  </p>
 
-      <div class="available-size">
-        <label for="sizeSelect" class="form-label">Available Size:</label>
-        <select class="form-select" id="sizeSelect">
-          <option value="20gm">20gm</option>
-          <option value="50gm">50gm</option>
-          <option value="100gm">100gm</option>
-        </select>
-      </div>
-
-      <div class="quantity-section">
-        <button onclick="decrement()">-</button>
-        <input
-          type="number"
-          id="quantity"
-          class="form-control"
-          value="1"
-          min="1"
-        />
-        <button onclick="increment()">+</button>
-      </div>
-
-      <button class="btn btn-success btn-lg w-100 add-to-cart"  data-id="4"
-            data-name="Icecream"
-            data-price="30">Add to Cart</button>
-
-      <p class="mt-3">SKU: F5wslk62set5</p>
-      <p>Brand: Olympic</p>
-      <p>Category: Snacks</p>
-    </div>
+  <div class="available-size">
+    <label for="sizeSelect" class="form-label">Available Size:</label>
+    <select class="form-select" id="sizeSelect">
+      <option value="1litr" data-price="2.00">1litr</option>
+      <option value="2litr" data-price="4.00">2litr</option>
+      <option value="5litr" data-price="10.00">5litr</option>
+    </select>
   </div>
+
+  <div class="quantity-section">
+    <button onclick="decrement()">-</button>
+    <input
+      type="number"
+      id="quantity"
+      class="form-control"
+      value="1"
+      min="1"
+    />
+    <button onclick="increment()">+</button>
+  </div>
+
+  
+
+    <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="3" data-name="Icecream" data-price="2.00" onclick="addToCart(this)">
+  Add to Cart
+</button>
+
+
+  <p class="mt-3">SKU: F5wslk62set5</p>
+  <p>Brand: Olympic</p>
+  <p>Category: Electric</p>
+</div>
+</div>
+
+
+
+
 
   <!-- Product Features -->
   <div class="row product-description">

@@ -1,5 +1,5 @@
       const images = [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtk-hrij30TxKt8MnrqZQFMVAfE7k95Pu9Mg&s",
+        "images/ad-image-1.png",
         "https://alfatah.pk/cdn/shop/files/MasalaRs.40.png?v=1710155078",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOYdsJai2biNqcgWCw_J-X_GwoWbpJpEWEaA&s",
       ];

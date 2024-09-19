@@ -1,99 +1,88 @@
+// Function to update the cart (quantities, subtotal, etc.)
 function updateCart() {
   let subtotal = 0;
-  document.querySelectorAll('.quantity').forEach(function(input) {
-    const price = parseFloat(input.getAttribute('data-price'));
-    const quantity = parseInt(input.value);
-    const itemSubtotal = price * quantity;
-    input.closest('tr').querySelector('.item-subtotal').textContent = `$${itemSubtotal.toFixed(2)}`;
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  cart.forEach(item => {
+    const quantityInput = document.querySelector(`input[data-id="${item.id}"]`);
+    item.quantity = parseInt(quantityInput.value);
+    const itemSubtotal = item.price * item.quantity;
+    document.querySelector(`.item-subtotal[data-id="${item.id}"]`).textContent = `$${itemSubtotal.toFixed(2)}`;
     subtotal += itemSubtotal;
   });
+
+  localStorage.setItem('cart', JSON.stringify(cart));  // Save updated cart
   document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
-  const totalValue = subtotal + 60 + 20; // Shipping and VAT
+  const totalValue = subtotal + 60 + 20;  // Add Shipping and VAT
   document.getElementById('totalValue').textContent = `$${totalValue.toFixed(2)}`;
 }
 
-function updateQuantity(button, increment) {
-  const quantityInput = button.closest('.quantity-controls').querySelector('.quantity');
+// Function to display cart items from localStorage
+function displayCart() {
+  const cartItemsDiv = document.getElementById('cartItems');
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  if (cart.length === 0) {
+    cartItemsDiv.innerHTML = '<tr><td colspan="4">Your cart is empty.</td></tr>';
+    return;
+  }
+
+  cartItemsDiv.innerHTML = '';
+  cart.forEach(item => {
+    const itemRow = document.createElement('tr');
+    itemRow.setAttribute('data-id', item.id);
+    itemRow.innerHTML = `
+      <td>
+        <div class="d-flex">
+          <img src="./images/ad-image-${item.id}.png" alt="${item.name}" style="width: 80px; margin: 20px;">
+          <div>
+            <h6>${item.name}</h6>
+            <small>$${item.price}</small>
+          </div>
+        </div>
+      </td>
+      <td class="quantity-controls">
+        <button class="btn-minus" onclick="updateQuantity(this, -1, ${item.id})">-</button>
+        <input type="number" class="form-control quantity" value="${item.quantity}" min="1" data-id="${item.id}" data-price="${item.price}" readonly>
+        <button class="btn-plus" onclick="updateQuantity(this, 1, ${item.id})">+</button>
+      </td>
+      <td class="item-subtotal" data-id="${item.id}">$${(item.price * item.quantity).toFixed(2)}</td>
+      <td><button class="delete-btn" onclick="removeItem(${item.id})"><i class="fas fa-trash"></i></button></td>
+    `;
+    cartItemsDiv.appendChild(itemRow);
+  });
+
+  updateCart();  // Update subtotal and total value
+}
+
+
+// Function to remove items from the cart
+function removeItem(id) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart = cart.filter(item => item.id !== id);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  displayCart();
+}
+
+// Update quantity (increase or decrease)
+function updateQuantity(button, increment, id) {
+  const quantityInput = button.closest('.quantity-controls').querySelector('input');
   let quantity = parseInt(quantityInput.value);
   quantity = quantity + increment;
-  if (quantity < 1) quantity = 1; // Ensure quantity can't go below 1
+  if (quantity < 1) quantity = 1;  // Ensure minimum quantity of 1
   quantityInput.value = quantity;
-  updateCart(); // Automatically update the cart when quantity changes
+  updateCart();  // Update cart after quantity change
 }
 
-function removeItem(id) {
-  document.querySelector(`tr[data-id="${id}"]`).remove();
-  updateCart();
-}
-
+// Checkout function
 function checkout() {
   if (!document.getElementById('termsCheck').checked) {
     alert("Please agree to the terms and conditions before proceeding.");
   } else {
     alert("Proceeding to checkout...");
-    // Add your checkout logic here
+    // Add checkout logic here
   }
-}
-
-
-
-
-// cart.js
-
-
-// Function to display cart items
-function displayCart() {
-const cartItemsDiv = document.getElementById('cart-items');
-const cartTotalDiv = document.getElementById('cart-total');
-cartItemsDiv.innerHTML = '';
-cartTotalDiv.innerHTML = '';
-
-// Load the cart from localStorage
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-if (cart.length === 0) {
-    cartItemsDiv.innerHTML = '<p>Your cart is empty.</p>';
-    return;
-}
-
-let totalPrice = 0;
-
-cart.forEach(item => {
-    const productElement = document.createElement('div');
-    productElement.className = 'cart-item';
-    productElement.innerHTML = `
-        <p>${item.name} - $${item.price} (Quantity: ${item.quantity})</p>
-        <button class="remove-item" data-id="${item.id}">Remove</button>
-    `;
-    cartItemsDiv.appendChild(productElement);
-
-    totalPrice += item.price * item.quantity;
-});
-
-cartTotalDiv.innerHTML = `<h3>Total: $${totalPrice.toFixed(2)}</h3>`;
-
-// Add event listeners to remove buttons
-const removeButtons = document.querySelectorAll('.remove-item');
-removeButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const id = button.getAttribute('data-id');
-        removeFromCart(id);
-    });
-});
-}
-
-// Function to remove items from the cart
-function removeFromCart(id) {
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-cart = cart.filter(item => item.id !== id);
-localStorage.setItem('cart', JSON.stringify(cart));
-displayCart();
 }
 
 // Display the cart when the page loads
 window.onload = displayCart;
-
-
-
-
-
