@@ -57,15 +57,15 @@ function displayCart() {
 
 
 // Function to remove items from the cart
-function removeItem(id) {
-  let cart = JSON.parse(localStorage.getItem('cart')) || [];
-  cart = cart.filter(item => item.id !== id);
-  localStorage.setItem('cart', JSON.stringify(cart));
-  displayCart();
-}
+// function removeItem(id) {
+//   let cart = JSON.parse(localStorage.getItem('cart')) || [];
+//   cart = cart.filter(item => item.id !== id);
+//   localStorage.setItem('cart', JSON.stringify(cart));
+//   displayCart();
+// }
 
 // Update quantity (increase or decrease)
-function updateQuantity(button, increment, id) {
+function updateQuantity(button, increment) {
   const quantityInput = button.closest('.quantity-controls').querySelector('input');
   let quantity = parseInt(quantityInput.value);
   quantity = quantity + increment;
@@ -84,5 +84,41 @@ function checkout() {
   }
 }
 
+
+
+// Modified removeItem function to update the cart counter
+function removeItem(id) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart = cart.filter(item => item.id !== id);
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  // Update the cart count icon
+  updateCartCount();
+
+  displayCart(); // Refresh the cart page
+}
+
+
+// Call this function on page load to show the current cart count
+window.onload = function() {
+  displayCart();
+  updateCartCount();
+ 
+}
+
+
 // Display the cart when the page loads
-window.onload = displayCart;
+// window.onload = displayCart;
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -39,12 +39,12 @@
 
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="contact-us.php">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="sign-up.php">Register</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="login.php">Login</a>
                     </li>
                   </ul>
                 </div>
@@ -68,23 +68,21 @@
               class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center"
             >
               <div class="d-flex">
-                <!-- Cart -->
+                
+             
+               
                 <a class="text-reset me-3" href="cart.php">
-                  <span
-                    ><i
-                      class="fas fa-shopping-cart p-1"
-                      style="
-                        border: 1px solid black;
-                        border-radius: 50px;
-                        height: 30px;
-                        width: 30px;
-                      "
-                    ></i
-                  ></span>
-                  <span class="badge rounded-pill badge-notification bg-danger"
-                    >3</span
-                  >
-                </a>
+        <span>
+            <i class="fas fa-shopping-cart p-1" style="
+                border: 1px solid black;
+                border-radius: 50px;
+                height: 30px;
+                width: 30px;">
+            </i>
+        </span>
+        <span id="cart-count" class="badge rounded-pill badge-notification bg-danger">0</span>
+    </a>
+
                 <!-- User -->
 
                 <a href="login.php">
@@ -142,6 +140,7 @@
               </a>
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
+                <a href="index.php" style="text-decoration:none; color:black;">
                   <button
                     class="btn btn-toggle align-items-center rounded collapsed"
                     data-bs-toggle="collapse"
@@ -150,90 +149,48 @@
                   >
                     HOME
                   </button>
-                  <div class="collapse show" id="home-collapse">
-                    <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
-                    >
-                      <li>
-                        <a href="#" class="link-dark rounded">Overview</a>
-                      </li>
-                      <li><a href="#" class="link-dark rounded">Updates</a></li>
-                      <li><a href="#" class="link-dark rounded">Reports</a></li>
-                    </ul>
-                  </div>
+                </a>
                 </li>
                 <li class="mb-1">
-                  <button
-                    class="btn btn-toggle align-items-center rounded collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#dashboard-collapse"
-                    aria-expanded="false"
-                  >
-                    Dashboard
-                  </button>
-                  <div class="collapse" id="dashboard-collapse">
-                    <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
-                    >
-                      <li>
-                        <a href="#" class="link-dark rounded">Overview</a>
-                      </li>
-                      <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                      <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                      <li>
-                        <a href="#" class="link-dark rounded">Annually</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="mb-1">
+                  <a href="product-page.php" style="text-decoration:none; color:black;">
                   <button
                     class="btn btn-toggle align-items-center rounded collapsed"
                     data-bs-toggle="collapse"
                     data-bs-target="#orders-collapse"
                     aria-expanded="false"
                   >
-                    Orders
+                    Products
                   </button>
-                  <div class="collapse" id="orders-collapse">
-                    <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
-                    >
-                      <li><a href="#" class="link-dark rounded">New</a></li>
-                      <li>
-                        <a href="#" class="link-dark rounded">Processed</a>
-                      </li>
-                      <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                      <li>
-                        <a href="#" class="link-dark rounded">Returned</a>
-                      </li>
-                    </ul>
-                  </div>
+                  </a>
                 </li>
+                <li class="mb-1">
+                  <a href="product-page-list.php" style="text-decoration:none; color:black;">
+                  <button
+                    class="btn btn-toggle align-items-center rounded collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#orders-collapse"
+                    aria-expanded="false"
+                  >
+                    Product List
+                  </button>
+                  </a>
+                </li>
+                
+                
                 <li class="border-top my-3"></li>
                 <li class="mb-1">
+                  <a href="sign-up.php" style="text-decoration:none; color:black;">
                   <button
                     class="btn btn-toggle align-items-center rounded collapsed"
                     data-bs-toggle="collapse"
                     data-bs-target="#account-collapse"
                     aria-expanded="false"
                   >
-                    Account
+                   Create Account
                   </button>
-                  <div class="collapse" id="account-collapse">
-                    <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
-                    >
-                      <li><a href="#" class="link-dark rounded">New...</a></li>
-                      <li><a href="#" class="link-dark rounded">Profile</a></li>
-                      <li>
-                        <a href="#" class="link-dark rounded">Settings</a>
-                      </li>
-                      <li>
-                        <a href="#" class="link-dark rounded">Sign out</a>
-                      </li>
-                    </ul>
-                  </div>
+                  </a>
+                 
+                  
                 </li>
               </ul>
             </div>
