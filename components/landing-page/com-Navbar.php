@@ -244,7 +244,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link  fresh" 
-                  href="#"
+                  href="veg-items.php"
                   
                   >FRESH</a
                 >
@@ -252,19 +252,12 @@
               <li class="nav-item">
                 <a
                   class="nav-link  frozen"
-                  href="#"
+                  href="frozen-food.php"
                  
                   >FROZEN</a
                 >
               </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link shop "
-                  href="#"
-                  
-                  >SHOP</a
-                >
-              </li>
+             
               <li class="nav-item">
                 <a
                   class="nav-link  faqs"
