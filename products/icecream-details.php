@@ -17,6 +17,9 @@
  <?php
  include "./components/products-details/com-icecream-details.php"
  ?>
+
+
+
    <script src="./js/product.js"></script> 
    <script src="./js/cart.js"></script> 
    <script src="./js/icecream.js"></script> 

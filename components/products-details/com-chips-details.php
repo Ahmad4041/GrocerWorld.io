@@ -80,7 +80,7 @@
     data-name="Masala Chips"
     data-price="8.50" >Add to Cart</button> -->
 
-    <button class="btn btn-success btn-lg w-100 add-to-cart" data-id="1" data-name="Masala Potato Chips" data-price="8.50" onclick="addToCart(this)">
+    <button class="btn btn-success btn-lg w-100 add-to-cart  "  data-id="1" data-name="Masala Potato Chips" data-price="8.50"   onclick="addToCart(this)">
   Add to Cart
 </button>
 
