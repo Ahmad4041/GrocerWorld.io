@@ -11,9 +11,9 @@ function updateCart() {
     subtotal += itemSubtotal;
   });
 
-  localStorage.setItem('cart', JSON.stringify(cart));  // Save updated cart
+  localStorage.setItem('cart', JSON.stringify(cart)); 
   document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
-  const totalValue = subtotal + 60 + 20;  // Add Shipping and VAT
+  const totalValue = subtotal + 60 + 20;  
   document.getElementById('totalValue').textContent = `$${totalValue.toFixed(2)}`;
 }
 
@@ -42,27 +42,22 @@ function displayCart() {
         </div>
       </td>
       <td class="quantity-controls">
-        <button class="btn-minus" onclick="updateQuantity(this, -1, ${item.id})">-</button>
+        <button class="btn-minus" onclick="updateQuantity(this, -1,' ${item.id}')">-</button>
         <input type="number" class="form-control quantity" value="${item.quantity}" min="1" data-id="${item.id}" data-price="${item.price}" readonly>
         <button class="btn-plus" onclick="updateQuantity(this, 1, ${item.id})">+</button>
       </td>
       <td class="item-subtotal" data-id="${item.id}">$${(item.price * item.quantity).toFixed(2)}</td>
-      <td><button class="delete-btn" onclick="removeItem(${item.id})"><i class="fas fa-trash"></i></button></td>
+     <td><button class="delete-btn" onclick="removeItem('${item.id}')"><i class="fas fa-trash"></i></button></td>
+
     `;
     cartItemsDiv.appendChild(itemRow);
   });
 
-  updateCart();  // Update subtotal and total value
+  updateCart();  
 }
 
 
-// Function to remove items from the cart
-// function removeItem(id) {
-//   let cart = JSON.parse(localStorage.getItem('cart')) || [];
-//   cart = cart.filter(item => item.id !== id);
-//   localStorage.setItem('cart', JSON.stringify(cart));
-//   displayCart();
-// }
+
 
 // Update quantity (increase or decrease)
 function updateQuantity(button, increment) {
@@ -86,6 +81,12 @@ function checkout() {
 
 
 
+
+
+
+
+
+
 // Modified removeItem function to update the cart counter
 function removeItem(id) {
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -106,9 +107,6 @@ window.onload = function() {
  
 }
 
-
-// Display the cart when the page loads
-// window.onload = displayCart;
 
 
 

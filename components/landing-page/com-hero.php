@@ -32,7 +32,7 @@
                     class="d-grid gap-1 d-sm-flex justify-content-sm-center justify-content-md-start"
                   >
                     <a
-                      href="#!"
+                      href="product-page.php"
                       class="btn bsb-btn-2xl text-light"
                       style="
                         background-color: orange;
