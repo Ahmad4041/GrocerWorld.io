@@ -39,12 +39,24 @@
 
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="contact-us.php">Action</a></li>
+                    <li><a class="dropdown-item" href="bakery-items.php">Bakery Items</a></li>
                     <li>
-                      <a class="dropdown-item" href="sign-up.php">Register</a>
+                      <a class="dropdown-item" href="Snacks-item.php">Snacks</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="login.php">Login</a>
+                      <a class="dropdown-item" href="frozen-food.php">Frozen Items</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="fruits.php">Friuts</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="custard.php">Powder</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="meat-fish.php">Meat</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="juices.php">Juices</a>
                     </li>
                   </ul>
                 </div>
