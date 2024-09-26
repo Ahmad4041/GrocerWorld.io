@@ -14,7 +14,7 @@
 <body>
 
     <?php
-    include "./components/landing-page/com-Navbar.php"
+    include "./components/landing-page/com-Navbar.html"
     ?>
 
   
