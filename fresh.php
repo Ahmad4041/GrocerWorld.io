@@ -8,6 +8,7 @@
     <title>Grocer World</title>
 </head>
 <body>
+    
 <?php
 
     include "Navbar.php"

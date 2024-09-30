@@ -22,7 +22,7 @@
     background-color: #fff;
   }
   .product-thumbnails .active img {
-    border: 2px solid #2a9d8f;
+    border: 2px solid rgb(1, 68, 1);
   }
   .price {
     font-size: 24px;
@@ -53,8 +53,8 @@
     outline: none;
   }
   .btn-primary {
-    background-color: #2a9d8f;
-    border-color: #2a9d8f;
+    background-color: rgb(1, 68, 1);
+    border-color: rgb(1, 68, 1);
   }
   .product-description {
     margin-top: 50px;
@@ -96,14 +96,14 @@
   }
 
   .card:hover{
-    border-color: darkgreen;
+    border-color:  rgb(1, 68, 1);
     cursor: pointer;
-    border: 2px solid  darkgreen;
+    border: 2px solid   rgb(1, 68, 1);
     transform: translate3d(0,-10px,0);
 box-shadow: 0px 21px 44px rgba(0, 0, 0, 0.08);
 
   }
   .card-body .btn:hover{
-background-color: darkgreen;
+background-color: rgb(1, 68, 1);
 color: white;
   }
