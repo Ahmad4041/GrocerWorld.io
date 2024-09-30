@@ -24,10 +24,10 @@
     border-radius: 5px;
 }
 .product-badge.best {
-    background-color: green;
+    background-color: rgb(1, 68, 1);
 }
 .product-badge.sale {
-    background-color: #28a745;
+    background-color: brown;
 }
 .product-badge.new {
     background-color: #dc3545;

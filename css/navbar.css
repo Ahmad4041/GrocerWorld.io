@@ -6,17 +6,20 @@ body{
     min-width: 320px;
 }
 
-.activelink{
-    color: yellow;
-}
 
-
+  
  
 .navbar-nav .nav-item a{
     color: white; 
 
 
 }
-.navbar-nav .nav-item a :hover{
+
+
+.navbar-nav .nav-item a.active{
+   
     color: yellow;
+    font-weight: bolder;
+   
+    
 }

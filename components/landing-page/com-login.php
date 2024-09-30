@@ -46,8 +46,9 @@
         </label>
         <p class="mt-3">
           By continueing you agree to our
-          <span class="text-success">terms of services</span> and
-          <span class="text-success">privacy policy</span>
+          <a href="terms-services.php" style="text-decoration:none;"><span class="text-success">terms of services</span></a>  and
+         
+         <a href="privacy-policy.php" style="text-decoration:none;"><span class="text-success">privacy policy</span></a> 
         </p>
       </div>
 
