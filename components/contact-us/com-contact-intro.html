@@ -19,6 +19,7 @@
               class="form-control"
               placeholder="Full Name"
               aria-label="Full Name"
+              id="fullName"
             />
             <span class="input-group-text">
               <svg
@@ -43,6 +44,7 @@
               class="form-control"
               placeholder="Enter Email"
               aria-label="Email"
+              id="email"
             />
             <span class="input-group-text">
               <svg
@@ -85,8 +87,8 @@
             </span>
           </div>
           <a
-            type="submit"
             class="btn btn-submit"
+            id="submitBtn"
             style="
               background-color: #28a745;
               color: #fff;
@@ -96,6 +98,17 @@
             >Send Message</a
           >
         </form>
+        <!-- Alert Messages -->
+        <div class="alert alert-danger mt-3 d-none" id="nameAlert" role="alert">
+          Please enter a valid name (at least 3 characters).
+        </div>
+        <div
+          class="alert alert-danger mt-3 d-none"
+          id="emailAlert"
+          role="alert"
+        >
+          Please enter a valid email address.
+        </div>
       </div>
     </div>
   </div>
